@@ -1,153 +1,231 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-body {
-  color: #333;
+body{
+    background-color: #0f172a;
+    color: white;
 }
 
-/* Navbar */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 40px;
-  background: #111;
+/* ================= NAVBAR ================= */
+
+header{
+    background: #020617;
+    padding: 15px 8%;
 }
 
-.logo {
-  color: #ffb703;
-  font-size: 26px;
-  font-weight: bold;
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav a {
-  color: #fff;
-  margin-left: 20px;
-  text-decoration: none;
+nav .left{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #38bdf8;
 }
 
-/* Hero */
-.hero {
-  height: 90vh;
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-  url("https://images.unsplash.com/photo-1555396273-367ea4eb4db5");
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 25px;
 }
 
-.hero h1 {
-  font-size: 50px;
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.95rem;
+    transition: color 0.3s;
 }
 
-.hero p {
-  margin: 15px 0;
-  font-size: 18px;
+nav ul li a:hover{
+    color: #38bdf8;
 }
 
-.hero-btns {
-  margin-top: 15px;
+/* ================= HERO ================= */
+
+main{
+    padding: 60px 8%;
+    text-align: center;
 }
 
-.btn {
-  background: #ffb703;
-  color: #000;
-  padding: 12px 25px;
-  text-decoration: none;
-  margin: 5px;
-  border-radius: 30px;
-  display: inline-block;
+.First{
+    margin-bottom: 25px;
 }
 
-.btn.outline {
-  background: transparent;
-  border: 2px solid #ffb703;
-  color: #ffb703;
+.First h1{
+    font-size: 2.2rem;
 }
 
-/* Trust */
-.trust {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  padding: 25px;
-  background: #f8f8f8;
-  font-weight: bold;
+#element{
+    color: #38bdf8;
 }
 
-/* Sections */
-.about, .menu, .cta {
-  padding: 70px 20px;
-  text-align: center;
+.hero{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
 }
 
-.about p {
-  max-width: 600px;
-  margin: auto;
-  margin-top: 10px;
+.leftSection, .rightSection{
+    padding: 10px 20px;
+    border: 1px solid #38bdf8;
+    border-radius: 8px;
 }
 
-/* Menu Cards */
-.menu-box {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-top: 30px;
+button{
+    padding: 10px 25px;
+    border: none;
+    border-radius: 25px;
+    background: #38bdf8;
+    color: #020617;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
 }
 
-.card {
-  background: #fff;
-  padding: 25px;
-  width: 220px;
-  border-radius: 15px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-  transition: 0.3s;
+button:hover{
+    background: #0ea5e9;
+    transform: scale(1.05);
 }
 
-.card:hover {
-  transform: translateY(-8px);
+/* ================= SKILLS ================= */
+
+.skills{
+    padding: 50px 8%;
+    text-align: center;
 }
 
-.card span {
-  display: block;
-  margin-top: 10px;
-  font-weight: bold;
-  color: #ffb703;
+.skills h5{
+    font-size: 1.5rem;
+    margin-bottom: 30px;
 }
 
-/* CTA */
-.cta {
-  background: #111;
-  color: #fff;
+.con{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
 }
 
-/* Footer */
-footer {
-  background: #000;
-  color: #fff;
-  text-align: center;
-  padding: 15px;
+.box{
+    background: #020617;
+    padding: 20px;
+    border-radius: 12px;
+    transition: transform 0.3s;
 }
 
-/* WhatsApp Floating */
-.whatsapp {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #25d366;
-  color: white;
-  font-size: 24px;
-  padding: 12px 15px;
-  border-radius: 50%;
-  text-decoration: none;
+.box:hover{
+    transform: translateY(-5px);
+}
+
+.box a{
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #38bdf8;
+    font-weight: 500;
+}
+
+/* ================= PROJECTS ================= */
+
+.myproject{
+    padding: 50px 8%;
+    text-align: center;
+}
+
+.myproject h5{
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.box1{
+    background: #020617;
+    padding: 20px;
+    border-radius: 12px;
+    transition: transform 0.3s;
+}
+
+.box1:hover{
+    transform: scale(1.05);
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background: #020617;
+    padding: 50px 8%;
+}
+
+.last{
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+.last h2{
+    margin-bottom: 25px;
+}
+
+.container1{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+input{
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px){
+    nav{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero{
+        flex-direction: column;
+        font-size: 1rem;
+    }
+
+    .First h1{
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px){
+    header, main, .skills, .myproject, footer{
+        padding: 40px 5%;
+    }
+
+    .First h1{
+        font-size: 1.5rem;
+    }
 }
