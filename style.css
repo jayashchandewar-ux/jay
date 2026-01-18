@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #fff;
+  color: #333;
+}
+
+/* Navbar */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #111;
+}
+
+.logo {
+  color: #ffb703;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+/* Hero */
+.hero {
+  height: 90vh;
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+  url("https://images.unsplash.com/photo-1555396273-367ea4eb4db5");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+}
+
+.hero p {
+  margin: 15px 0;
+}
+
+.hero button {
+  padding: 10px 25px;
+  border: none;
+  background: #ffb703;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* About */
+.about, .menu, .contact {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.about p {
+  max-width: 600px;
+  margin: auto;
+  margin-top: 15px;
+}
+
+/* Menu */
+.menu-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.item {
+  background: #f4f4f4;
+  padding: 15px 30px;
+  border-radius: 8px;
+}
+
+/* Contact */
+.contact button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #111;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
